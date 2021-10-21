@@ -1,0 +1,132 @@
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  width: 100%;
+  min-width: 320px;
+  max-width: 1280px;
+  margin: 0 auto;
+  font-family: 'Inter', 'Arial', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: calc(100% - 200px*2);
+  background-color: white;
+
+}
+
+.header {
+  width: 100%;
+  height: 50vh;
+  min-height: 300px;
+  max-height: 756px;
+  background-color: #f3e390;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 70px;
+  line-height: 1.2;
+  font-weight: bolder;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  color: #fff;
+}
+
+.rotation {
+  animation: rotate 20s linear infinite;
+}
+
+.header-pic {
+  position: absolute;
+  right: 0;
+  background-image: url(./yellowSun.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 400px;
+}
+
+.choosing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.choosing-text {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: bolder;
+  margin: 0;
+  padding: 0;
+}
+
+.choosing-input {
+  margin-left: 20px;
+}
+
+.choosing-city {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: bolder;
+}
+
+.table {
+  margin: 40px auto;
+  width: 80%;
+  text-align: center;
+}
+
+.table-head {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: bolder;
+}
+
+.table-number {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+}
+
+.footer {
+  width: 80%;
+  margin: 0 auto;
+  padding: 67px 0 60px;
+}
+
+.footer-copyright {
+  color: #000;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
